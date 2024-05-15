@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    background-color: aliceblue;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+}
+.enlaces{
+    margin-right: 15px;
+    text-decoration: none;
+}
+.logo-img{
+    margin-right: 10px ;
+}
+.arg{
+    margin-right: 5px;
+}
+.enlaces:hover{
+    background-color: rgb(250, 193, 124);
+    border-radius: 10%; /* redondea los bordes*/
+    transform: scale(1.5);
+    transition: all .5s ease-in-out .1s;
+}
+
+.contenedor{
+    background-image: url(imagenes/encabezado\ prueba.jpg);
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*centra en la fila*/
+    align-items: center; /*centra en la columna*/
+
+}
+.info-contenedor, .info-contenedor-1{
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.info-contenedor-1{
+    padding: 15px 0;
+}
+.flex-container{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.flex-text{
+    font-family: "Radio Canada Big", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 65px;
+}
+
+
+.grid-container{
+    height: 1100px;
+    display: grid;
+    grid-auto-rows: 500px; /* Para definir el alto de las filas*/ 
+    grid-template-columns: repeat(3, 1fr); /* El repeat es para agilizar la progamacion del codigo. Es lo mismo que poner grid-template-columns: 1 fr 1fr 1fr;*/
+
+    grid-column-gap: 15px;
+    grid-row-gap: 25px;
+}
+
+.cataratas, .perito-moreno, .chalten, .salinas{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+
+.texto1, .texto2, .texto3, .texto4{
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight:bolder;
+    font-style: normal;
+
+}
+
+.pie-de-pagina{
+    background-color: cornflowerblue;
+    height: 100px;
+    margin-bottom: 40px;
+    margin-top: px;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Primer intento grid
+.contendor-img{  
+    background-image: url(imagenes/cataratas\ iguazu.jpeg);
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*cover sirve para que la foto no se distorcione
+      
+.contendor-img1{
+    background-image: url(imagenes/el\ chalten.jpeg);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-column-start: auto;
+}
+
+.contendor-img2{
+    background-image: url(imagenes/glaciar\ perito\ moreno.jpeg);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}/*

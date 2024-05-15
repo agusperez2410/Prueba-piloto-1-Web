@@ -1,0 +1,165 @@
+*{
+    margin: 0%;
+    
+}
+
+.argetina-inicio{
+    margin-left: auto;
+    padding: 1px;
+}
+.edicion-arg-inicio{
+    color: rgb(255, 252, 252);
+    font-weight:lighter ;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 2%;
+}
+
+/*
+.bienvenido{
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 80px;
+    margin-bottom: 0%;
+    font-size:200%;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style:italic;
+    color: rgb(24, 158, 236);
+}
+
+
+.titulo{
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: 0;
+    transform: translateX(20px) translateY(-51px);
+}
+
+.titulo{
+    color: rgb(235, 240, 237);
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 250%;
+}
+*/
+/*header{
+    /*position: fixed;
+    z-index: 2;
+    width: 100%;
+}*/
+
+.nav{
+    background-color: whitesmoke;
+    height: 100%; 
+    
+}
+.nav-info-1{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+
+.nav-contenedor{
+    
+    display: flex;
+    height: 85%; 
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.argetina-inicio{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+}
+.argentina-item{
+    color: rgb(4, 144, 179);
+    text-decoration: none;
+}
+.argentina-item:hover{
+    color: rgb(209, 209, 87);
+    transform: scale(1.1);
+    transition: all .5s ease-out .1s;
+}
+.nav-input{ 
+    display: none;  /*desaparece la box*/
+}
+.nav-icono{  /*Aparece el pulsor arriba del icono*/
+    display: block;
+    cursor: pointer;
+    margin-left: 0;
+    margin-right: 5%;
+    transition: all .5 ease-in-out .1s;
+    transform: scale(1.1);
+}
+/*
+.nav-menu{
+    position: fixed; El fixed fija un encabezado, cuando haces scroll para abajo
+   /* top: 80px;
+    bottom: 0;
+    background: #f08080;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out;
+}
+.nav-input:checked + .nav-menu {
+    background-color: aqua;
+    clip-path: circle(100% at center);
+}
+*/
+
+/*.title-contenedor:hover{
+    color: white;
+    transition: all .5s ease-in-out .10s;
+    transform: scale(2);
+}*/
+
+.title-contenedor{
+    
+    background-color: rgb(5, 161, 167);
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin: 2% 2% 2% 2%;
+}
+
+
+.informacion{
+    margin: 1.5% 1.5% 1.5% 1.5%;
+}
+.parrafo1, .parrafo2, .parrafo3, .parrafo4, .parrafo5 {
+    margin-left: 2.5%;
+    display: inline-block;
+    width: 50%; 
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    padding: auto;
+}
+.pie-de-pagina{
+    background-color: cornflowerblue;
+    height: 100px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
