@@ -141,17 +141,30 @@ body{
     font-style: normal;
     font-size: 65px;
 }
-
-
+.container{
+    height: 1300px;
+}
 .grid-container{
-    height: 1100px;
-    width: 100%;
-    
     display: grid;
     grid-auto-rows: 500px; /* Para definir el alto de las filas*/ 
-    grid-template-columns: repeat(4, 2fr); /* El repeat es para agilizar la progamacion del codigo. Es lo mismo que poner grid-template-columns: 1 fr 1fr 1fr;*/
+    grid-template-columns: repeat(2, 1fr);/* El repeat es para agilizar la progamacion del codigo. Es lo mismo que poner grid-template-columns: 1 fr 1fr 1fr;*/
     grid-column-gap: 15px;
     grid-row-gap: 25px;
+}
+@media screen and (max-width: 1200px) {
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+    }
+    .contendor-img3{
+        height: 500px;
+        width: 750px;
+        object-fit: cover;
+    }
+    .container{
+        height: 3050px;
+    }
 }
 
 .cataratas, .perito-moreno, .chalten, .salinas{
@@ -160,8 +173,6 @@ body{
     object-fit: cover;
 
 }
-
-
 
 .texto1, .texto2, .texto3, .texto4{
     font-family: "Roboto Mono", monospace;
@@ -174,13 +185,13 @@ body{
 .pie-de-pagina{
     background-color: cornflowerblue;
     height: 100px;
-    margin-bottom: 40px;
     width: 100%;
-    margin-right: 0;
-    margin-left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
+
+
 }
 
 /*Primer intento grid

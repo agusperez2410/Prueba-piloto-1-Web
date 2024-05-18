@@ -42,7 +42,7 @@ header{
     box-sizing: border-box;
 }
 body{
-    padding: 90px 20px 0;
+    padding: 90px 0 0;
 }
 
 .header{
@@ -97,7 +97,7 @@ body{
 
 @media screen and (max-width: 588px) {
     
-    .abrir-menu, .cerrar-menu{  /*para que cuando llego o pase los 550px se muestran los dos botones en sus respectivmos lugares*/
+    .cerrar-menu, .abrir-menu {  /*para que cuando llego o pase los 550px se muestran los dos botones en sus respectivmos lugares*/
         display: block;
         border: 0;
         font-size: 1.25;
@@ -163,11 +163,28 @@ body{
 }
 
 .nav-dudas{
+    margin-bottom: 10px;
     display: flex;
     justify-content:center ;
+
 }
 .dudas{
-    font-family: sans-serif;
+    font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+.item-padre{
+font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.item-hijo{
+    font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
 }
 .container-contacto{
     height: 8%;
@@ -234,14 +251,34 @@ body{
     font-size: 100%;
 }
 
+@media screen and (max-width: 768px){
+    .section-container{
+        height: 320px;
+    }   
+}
+
+@media screen and (max-width: 700px){
+    .section-container{
+        background-color: rgb(182, 173, 170);
+        border: 0;
+        margin: 0%;
+        width: 100%;
+    }
+    .diseño-form{
+        border: 0;
+        display:grid;
+        
+    }
+       
+}
 .pie-de-pagina{
     background-color: cornflowerblue;
     height: 100px;
     margin-bottom: 80px;
     margin-top: 80px;
     width: 100%;
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: 0%;
+    margin-left: 0%;
     display: flex;
     justify-content: center;
     align-items: center;
