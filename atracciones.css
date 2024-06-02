@@ -58,7 +58,7 @@ body{
 
 @media screen and (max-width: 588px) {
     
-    .abrir-menu, .cerrar-menu{  /*para que cuando llego o pase los 550px se muestran los dos botones en sus respectivmos lugares*/
+    .cerrar-menu, .abrir-menu{  /*para que cuando llego o pase los 550px se muestran los dos botones en sus respectivmos lugares*/
         display: block;
         border: 0;
         font-size: 1.25;
@@ -190,6 +190,7 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+    margin-bottom: 40px;
 
 
 }

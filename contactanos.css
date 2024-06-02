@@ -97,7 +97,7 @@ body{
 
 @media screen and (max-width: 588px) {
     
-    .cerrar-menu, .abrir-menu {  /*para que cuando llego o pase los 550px se muestran los dos botones en sus respectivmos lugares*/
+    .cerrar-menu, .abrir-menu{  /*para que cuando llego o pase los 550px se muestran los dos botones en sus respectivmos lugares*/
         display: block;
         border: 0;
         font-size: 1.25;
@@ -274,8 +274,8 @@ font-family: "Raleway", sans-serif;
 .pie-de-pagina{
     background-color: cornflowerblue;
     height: 100px;
-    margin-bottom: 80px;
-    margin-top: 80px;
+    margin-bottom: 40px;
+    margin-top: 40px;
     width: 100%;
     margin-right: 0%;
     margin-left: 0%;
