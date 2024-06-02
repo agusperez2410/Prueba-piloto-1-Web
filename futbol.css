@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: rgb(190, 186, 186);
+    height: 90px;
+    position: fixed; /*para fijar la barra de navegacion*/
+    z-index: 2;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    padding: 2rem; /*para separarlo del borde*/
+    display: flex; 
+    align-items: center; /*el item no intente tener la misma altura que los enlaces*/
+    justify-content: space-between; /*separa el icono de los enlaces*/
+}
+
+
+.items{
+    color: cornflowerblue;
+}
+
+.abrir-menu{
+    display: none; /*hace que el boton no se vea*/
+}
+
+.list-container{  
+    list-style-type: none; /*le saca las viñetas a la lista */
+    display: flex; /* pone una al lado de la otra las palabras*/
+    gap: 2rem; /* determina los espacios entre las palabras*/
+    margin-right: 10px;
+}
+
+.items{
+    text-decoration: none;
+
+}
+
+.abrir-menu{
+     display: none;
+}
+.cerrar-menu{
+    display: none; /* antes de llegar a los 550px el boton cerrado no se ve*/
+}
+
+@media screen and (max-width: 735px) {
+
+    .info{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 588px) {
+
+    .abrir-menu, .cerrar-menu{  /*para que cuando llego o pase los 550px se muestran los dos botones en sus respectivmos lugares*/
+        display: block;
+        border: 0;
+        font-size: 1.25;
+        cursor: pointer;
+    }
+    .cerrar-menu{
+        background-color: cornflowerblue ;
+    }
+
+    .abrir-menu{
+        margin-right: 15px;
+        background-color:  rgb(190, 186, 186);
+    }
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;/*para que no se vea el menu, se usa como prueba antes de enlasar con java script*/
+
+        display: flex;
+        flex-direction: column; /*se separa en columnas*/
+        align-items: end; /*se ponen todos los elementos donde termina*/
+        gap: 1rem;
+        position: absolute;
+        top: 0; /*para que empiece arriba*/
+        right: 0; /*para que empiece a la derecha*/
+        background-color: cornflowerblue;
+        padding: 2rem; /*para que no se pegue a los bordes*/
+        margin-bottom: 0%;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5); /*Para que el resto de la pantalla tenga un fondo medio gris*/
+        
+    }
+
+    .visible{ /*cuando toquemos el menu hmaburguesa se va a abrir el menu*/
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+    .list-container{
+        flex-direction: column;
+        align-items:end;
+    }
+    
+    .items{
+        color: white;
+    }
+}
+
+.boton{
+    border-radius: 0%;
+    border-style: none;
+    background-color: rgb(190, 186, 186);
+}
+.ul-futbol{    
+    position: absolute;
+    list-style: none;
+    padding: 0px 10px;
+    background-color: rgb(190, 186, 186);
+    width: 110px;
+    display: none;
+}
+.li-futbol-ri, .li-futbol-bo, .li-futbol-in, .li-futbol-es, .li-futbol-ve{
+    padding: 5px;
+
+}
+.list-container:hover{
+    display: block;
+}
